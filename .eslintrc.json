@@ -1,0 +1,58 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "jest": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-typescript/base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:sonarjs/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {},
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "settings": {
+    "node": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts"]
+      }
+    }
+  },
+  "plugins": ["@typescript-eslint", "sonarjs", "prettier"],
+  "ignorePatterns": [".eslintrc.json"],
+  "rules": {
+    "prettier/prettier": "off",
+    "no-duplicate-imports": "error",
+    "no-console": "error",
+    "no-debugger": "error",
+    "no-undef": "error",
+    "no-var": "warn",
+    "no-empty-function": "warn",
+    "no-useless-escape": "off",
+    "no-unused-vars": "error",
+    "prefer-const": "warn",
+    "array-bracket-spacing": "warn",
+    "object-curly-spacing": ["warn", "always"],
+    "sonarjs/no-duplicate-string": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-underscore-dangle": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+  }
+}

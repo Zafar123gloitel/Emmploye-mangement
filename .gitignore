@@ -1,0 +1,33 @@
+.vscode/*
+.next
+.husky
+node_modules
+
+# build
+/build
+build
+dist
+/dist
+tsconfig.tsbuildinfo
+
+# env files 
+.env
+.env/*
+.env.local
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# dummy test files
+test.js
+test.ts
+op.js
+op.ts
+MongoDB-Aggregation.md
